@@ -60,7 +60,7 @@ export default component$(() => {
   });
 
   return (
-    <div class="p-10">
+    <>
       <h1>Admin panel</h1>
 
       <Resource
@@ -83,7 +83,7 @@ export default component$(() => {
           );
         }}
       />
-    </div>
+    </>
   );
 });
 
