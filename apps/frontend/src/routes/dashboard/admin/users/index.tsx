@@ -1,10 +1,10 @@
 import { component$, useResource$, Resource, useVisibleTask$, useStore, $, PropFunction } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { UserCtx } from '../../../routes/layout';
-import { authorizedFetch } from '../../../shared/auth.service';
-import type { PaginatedRows, PaginationParams } from '../../../components/table/server-paginated-data-table';
-import { ServerPaginatedDataTable } from '../../../components/table/server-paginated-data-table';
-import { hybridPaginationHook, PaginationFetcher } from '../../../hooks/hybrid-pagination-hook';
+import { UserCtx } from '../../../layout';
+import { authorizedFetch } from '../../../../shared/auth.service';
+import type { PaginatedRows, PaginationParams } from '../../../../components/table/server-paginated-data-table';
+import { ServerPaginatedDataTable } from '../../../../components/table/server-paginated-data-table';
+import { hybridPaginationHook, PaginationFetcher } from '../../../../hooks/hybrid-pagination-hook';
 
 export const serializeQueryUserPaginationParams = (paginationParams: PaginationParams) => {
   const paramsForQuery: { [key: string]: string } = {
@@ -88,15 +88,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Admin panel',
+  title: 'Reduced.to | Admin panel | Users',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Admin panel, see other users, and more!',
+      content: 'Reduced.to | Get all users, and more!',
     },
     {
       property: 'og:type',
@@ -104,15 +104,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard/admin',
+      content: 'https://reduced.to/dashboard/admin/users',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Admin panel, see other users, and more!',
+      content: 'Reduced.to | Get all users, and more!',
     },
     {
       property: 'twitter:card',
@@ -120,11 +120,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Admin panel, see other users, and more!',
+      content: 'Reduced.to | Get all users, and more!',
     },
   ],
 };
