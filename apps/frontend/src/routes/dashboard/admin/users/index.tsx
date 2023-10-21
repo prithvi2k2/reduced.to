@@ -11,11 +11,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Admin panel',
+  title: 'Reduced.to | Admin panel | Users',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       name: 'description',
@@ -27,11 +27,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard/admin',
+      content: 'https://reduced.to/dashboard/admin/users',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       property: 'og:description',
@@ -43,7 +43,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Admin panel',
+      content: 'Reduced.to | Admin panel | Users',
     },
     {
       property: 'twitter:description',
