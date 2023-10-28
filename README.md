@@ -13,52 +13,52 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  
+  
 [![logo](https://raw.githubusercontent.com/origranot/reduced.to/ec59ee1dfe4c858b89d2d22935e2734d52794ea3/frontend/public/logo.svg)](https://reduced.to)
 
 [![Preview](/assets/images/preview.gif)](https://reduced.to)
 
-  <p align="center">
-    Reduced.to is a modern web application that reduces the length of link URL. So it's easier to remember, share and track.
-    <br />
-    <br />
-    <a href="https://reduced.to">App</a>
-    ·
-    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=bug%2Ctriage&template=bug.yml">Report Bug</a>
-    ·
-    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=enhancement%2Ctriage&template=feature_request.yml">Request Feature</a>
-  </p>
+  <p align="center">
+    Reduced.to is a modern web application that reduces the length of the link URL. So it's easier to remember, share, and track.
+    <br />
+    <br />
+    <a href="https://reduced.to">App</a>
+    ·
+    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=bug%2Ctriage&template=bug.yml">Report Bug</a>
+    ·
+    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=enhancement%2Ctriage&template=feature_request.yml">Request Feature</a>
+  </p>
 </div>
 <br />
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>📚 Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#-about-the-project">🌐 About The Project</a>
-      <ul>
-        <li><a href="#-built-with">🔥 Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#-getting-started">🚀 Getting Started</a>
-      <ul>
-        <li><a href="#-prerequisites">📃 Prerequisites</a></li>
-        <li><a href="#-installation">💻 Installation</a></li>
-        <li><a href="#-development">👩‍💻 Development</a></li>
-        <li><a href="#-docker">🐳 Docker</a></li>
-        <li><a href="#-docker-compose">🐙 Docker Compose</a></li>
-        <li><a href="#-configuration">👷 Configuration</a></li>
-      </ul>
-    </li>
-    <li><a href="#-usage">🐱‍💻 Usage</a></li>
-    <li><a href="#-roadmap">🧱 Roadmap</a></li>
-    <li><a href="#-contributing">🥇 Contributing</a></li>
-    <li><a href="#-contributors">🏆 Contributors</a></li>
-    <li><a href="#-license">📝 License</a></li>
-    <li><a href="#-contact">💌 Contact</a></li>
-  </ol>
+  <summary>📚 Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#-about-the-project">🌐 About The Project</a>
+      <ul>
+        <li><a href="#-built-with">🔥 Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-getting-started">🚀 Getting Started</a>
+      <ul>
+        <li><a href="#-prerequisites">📃 Prerequisites</a></li>
+        <li><a href="#-installation">💻 Installation</a></li>
+        <li><a href="#-development">👩‍💻 Development</a></li>
+        <li><a href="#-docker">🐳 Docker</a></li>
+        <li><a href="#-docker-compose">🐙 Docker Compose</a></li>
+        <li><a href="#-configuration">👷 Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-usage">🐱‍💻 Usage</a></li>
+    <li><a href="#-roadmap">🧱 Roadmap</a></li>
+    <li><a href="#-contributing">🥇 Contributing</a></li>
+    <li><a href="#-contributors">🏆 Contributors</a></li>
+    <li><a href="#-license">📝 License</a></li>
+    <li><a href="#-contact">💌 Contact</a></li>
+  </ol>
 </details>
 <br/>
 
@@ -72,7 +72,7 @@
 
 ### 🔥 Built With
 
-List of frameworks/libraries used to bootstrap the project.
+List of frameworks and libraries used to bootstrap the project:
 
 - [![NX][nx]][nx-url]
 - [![Nest][nestjs]][nest-url]
@@ -88,41 +88,41 @@ List of frameworks/libraries used to bootstrap the project.
 
 ### 📃 Prerequisites
 
-List of things you need to run the project locally and how to install them.
+List the things you need to run the project locally and how to install them.
 
 - npm
-  ```sh
-  npm install npm@latest -g
-  ```
+  ```sh
+  npm install npm@latest -g
+  ```
 - docker
-  ```sh
-  https://docs.docker.com/get-docker/
-  ```
+  ```sh
+  https://docs.docker.com/get-docker/
+  ```
 
 ### 💻 Installation
 
-1. [Fork](https://github.com/origranot/reduced.to/fork) / Clone this repository
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+1. [Fork](https://github.com/origranot/reduced.to/fork) / Clone this repository.
+2. Install NPM packages.
+   ```sh
+   npm install
+   ```
 3. Copy `.example.env` to `.env` and fill it properly (see [Configuration](#-configuration))
-4. Make sure you have a local instance of PostgreSQL running on port 5432. If not, you can run it using docker:
-   ```sh
-   docker run --name reduced_to_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=reduced_to_db -p 5432:5432 -d postgres
-   ```
-5. Run Prisma migration from root folder:
-   ```sh
-   npx nx migrate-dev prisma --name=init
-   ```
-6. Run the backend from root folder:
-   ```sh
-   npx nx serve backend
-   ```
-7. Run the frontend from root folder:
-   ```sh
-   npx nx serve frontend
-   ```
+4. Make sure you have a local instance of PostgreSQL running on port 5432. If not, you can run it using Docker:
+   ```sh
+   docker run --name reduced_to_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=reduced_to_db -p 5432:5432 -d postgres
+   ```
+5. Run Prisma migration from the root folder:
+   ```sh
+   npx nx migrate-dev prisma --name=init
+   ```
+6. Run the backend from the root folder:
+   ```sh
+   npx nx serve backend
+   ```
+7. Run the frontend from the root folder:
+   ```sh
+   npx nx serve frontend
+   ```
 
 ### 👩‍💻 Development
 
@@ -131,16 +131,16 @@ The project is structured in the following way:
 ```
 .
 ├── apps/
-│   ├── backend
-│   └── frontend
+│   ├── backend
+│   └── frontend
 └── libs/
-    ├── config
-    └── prisma
+    ├── config
+    └── prisma
 ```
 
 ### 🐳 Docker
 
-You can build the docker images by running the following nx command:
+You can build the Docker images by running the following nx command:
 
 ```sh
 npx nx run-many -t docker-build
@@ -150,16 +150,16 @@ npx nx run-many -t docker-build
 
 ### 🐙 Docker compose
 
-- In case you have docker installed, you can _single-click_ deploy and test your changes by running the following and going to `http://localhost:5000/` on your browser.
+- In case you have Docker installed, you can _single-click_ deploy and test your changes by running the following and going to `http://localhost:5000/` on your browser.
 - When you run the command below, don't forget to change the .env file with the correct values.
 
-  ```sh
-  docker compose -f docker/local/docker-compose.yml -p reduced-to up
-  ```
+  ```sh
+  docker compose -f docker/local/docker-compose.yml -p reduced-to up
+  ```
 
 ### 👷 Configuration
 
-For the minimal configuration you can just rename the `.example.env` files to `.env`.
+For the minimal configuration, you can just rename the `.example.env` files to `.env`.
 
 ###### General
 
@@ -183,12 +183,12 @@ For the minimal configuration you can just rename the `.example.env` files to `.
 ###### Frontend
 
 - **DOMAIN**: Domain of your frontend app
-- **API_DOMAIN**: Domain of your backend instance (used for server side requests)
-- **CLIENTSIDE_API_DOMAIN**: Domain of your backend instance (used for client side requests)
+- **API_DOMAIN**: Domain of your backend instance (used for server-side requests)
+- **CLIENTSIDE_API_DOMAIN**: Domain of your backend instance (used for client-side requests)
 
 ###### Redis
 
-- **REDIS_ENABLE**: Whether to use external Redis store or not
+- **REDIS_ENABLE**: Whether to use an external Redis store or not
 - **REDIS_HOST**: Redis instance host
 - **REDIS_PORT**: Redis instance port
 - **REDIS_PASSWORD**: Redis instance password
@@ -196,12 +196,12 @@ For the minimal configuration you can just rename the `.example.env` files to `.
 
 ###### Auth
 
-- **JWT_ACCESS_SECRET**: Jwt secret (used for access tokens)
-- **JWT_REFRESH_SECRET**: Jwt secret (used for refresh tokens)
+- **JWT_ACCESS_SECRET**: JWT secret (used for access tokens)
+- **JWT_REFRESH_SECRET**: JWT secret (used for refresh tokens)
 
 ###### Novu
 
-- **NOVU_API_KEY**: Get it from https://novu.co/, you don't need this when running locally (just verify your email from the database)
+- **NOVU_API_KEY**: Get it from https://novu.co/; you don't need this when running locally (just verify your email from the database).
 
 Happy Hacking !
 
@@ -227,11 +227,11 @@ Simply copy and paste a URL into the provided area. Then click shorten URL! Your
 - [x] Migrate frontend to Qwik
 - [x] Better README
 - [x] Generate QRCode
-- [x] Split front-end into components
+- [x] Split the front-end into components
 - [x] Better UI
-  - [x] Animations
-  - [x] Logo
-  - [x] Dark/Light mode
+  - [x] Animations
+  - [x] Logo
+  - [x] Dark/Light mode
 - [ ] Improve front-end components
 - [x] Backend tests
 - [x] Migration to Nx
@@ -244,7 +244,7 @@ Simply copy and paste a URL into the provided area. Then click shorten URL! Your
 
 Just create a [Pull request](https://github.com/origranot/reduced.to/pulls) already 😃
 
-_See the [open issues](https://github.com/origranot/reduced.to/issues) for a full list of proposed features (and known issues)._
+_See the [open issues](https://github.com/origranot/reduced.to/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,16 +257,16 @@ Contributions are what make the open-source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star ⭐!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request.
 
 ## 🏆 Contributors
 
 <a href = "https://github.com/origranot/reduced.to/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=origranot/reduced.to"/>
+  <img src = "https://contrib.rocks/image?repo=origranot/reduced.to"/>
 </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
